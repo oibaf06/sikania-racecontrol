@@ -17,5 +17,8 @@ export class WebsocketService {
 	OnSessionData() {
 		return this.socket.fromEvent('session');
 	}
+	OnTelemetry() {
+		return this.socket.fromEvent('telemetry');
+	}
 
 }

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { WeekendInfo } from 'src/app/interfaces/ISession';  
+import { Session } from 'src/app/interfaces/ISession';  
 
 @Component({
   selector: 'app-session-info',
@@ -8,7 +8,7 @@ import { WeekendInfo } from 'src/app/interfaces/ISession';
 })
 export class SessionInfoComponent implements OnInit {
 
-  @Input() weekendInfo: WeekendInfo | undefined
+  @Input() session: Session | undefined
 
   constructor() { }
 

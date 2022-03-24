@@ -8,6 +8,8 @@ import { SessionInfoComponent } from './components/session-info/session-info.com
 import { environment } from 'src/environments/environment';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { InformationsBannerComponent } from './components/informations-banner/informations-banner.component';
+import { TrackInfoComponent } from './components/track-info/track-info.component';
+import { TelemetryComponent } from './components/telemetry/telemetry.component';
 
 const config: SocketIoConfig = {
 	url: environment.socketUrl, // socket server url;
@@ -20,7 +22,9 @@ const config: SocketIoConfig = {
   declarations: [
     AppComponent,
     SessionInfoComponent,
-    InformationsBannerComponent
+    InformationsBannerComponent,
+    TrackInfoComponent,
+    TelemetryComponent
   ],
   imports: [
     BrowserModule,

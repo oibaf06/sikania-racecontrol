@@ -3,5 +3,14 @@
 </h1>
 
 <p>
-   Current Session: {{ session }}
+   Current Session: {{ session?.SessionName }}
+</p>
+<p>
+   Session Time: {{ session?.SessionTime }}
+</p>
+<p>
+   Lap completed: {{ session?.ResultsLapsComplete }}
+</p>
+<p>
+   N bandiere gialle: {{ session?.ResultsNumCautionFlags }}
 </p>
