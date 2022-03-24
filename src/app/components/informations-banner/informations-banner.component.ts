@@ -15,7 +15,6 @@ export class InformationsBannerComponent implements OnInit {
 
   ngOnInit(): void {
     this.WebsocketService.OnSessionData().subscribe((data: any) => {
-      console.log(data);
       this.sessionData = data;
     })
   }

@@ -8,7 +8,7 @@ export class WebsocketService {
 
   constructor(private socket: Socket) { }
 
-  // emit event
+  	// emit event
 	emitSomethig() {
 		this.socket.emit('emitSomethig');
 	} 

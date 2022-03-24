@@ -15,7 +15,6 @@ export class TelemetryComponent implements OnInit {
 
   ngOnInit(): void {
     this.WebsocketService.OnTelemetry().subscribe((data: any) => {
-      console.log(data);
       this.telemetry = data;
     })
   }
