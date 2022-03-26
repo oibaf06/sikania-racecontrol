@@ -1,4 +1,4 @@
-<app-track-info [weekendInfo]="sessionData?.data?.WeekendInfo"></app-track-info>
-<app-session-info *ngFor=" let session of sessionData?.data?.SessionInfo?.Sessions" [session]="session"></app-session-info>
-
+<app-track-info [weekendInfo]="sessionData?.data?.WeekendInfo" class="col"></app-track-info>
+<app-session-info *ngFor=" let session of sessionData?.data?.SessionInfo?.Sessions" [session]="session" class="col"></app-session-info>
+<div class="col"></div>
 
